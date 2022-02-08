@@ -1,0 +1,12 @@
+.body {
+  min-width: $min-width;
+  color: $color-primary;
+  font-size: $size-primary;
+  font-family: $font-primary;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

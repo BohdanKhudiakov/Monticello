@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("../../img/bg-header-main.jpg"), url("../../img/bg-header.jpg");
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+  }
+  &__dots {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: -203px;
+    &__img {
+      margin: 25px 51px 12px 0;
+    }
+  }
+  &__nav {
+    margin-top: 16px;
+    &__dot {
+      margin-right: 13px;
+      margin-left: -26px;
+      &:hover {
+        content: url("../../img/Dot-active.svg");
+      }
+    }
+    &__item {
+      display: flex;
+      margin-left: 82px;
+    }
+    &__list {
+      margin: 0 50px 0 46px;
+    }
+    &__link {
+      text-decoration: none;
+      color: $color-third;
+      font-family: $font-third;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  &__media {
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__list {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+    &__img {
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+  &__titul {
+    margin-top: 220px;
+    &-down {
+      margin-top: 22px;
+      color: $color-third;
+    }
+  }
+  &__arrow {
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: auto;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 40px;
+    &__img {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 50px;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+.top__arrow {
+  bottom: 20px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  transform: rotateX(180deg);
+  background-color: #4B5562;
+  border-radius: 50%;
+  opacity: .35;
+  position: fixed;
+  &:hover {
+    opacity: .50;
+    transform: scale(1.3) rotateX(180deg);
+  }
+}

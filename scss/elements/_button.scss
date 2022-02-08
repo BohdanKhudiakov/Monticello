@@ -1,0 +1,14 @@
+.btn {
+  border: 1px solid #2C4058;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-secondary;
+  padding: 16px 41px 15px 43px;
+  transition-property: background-color;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-third;
+    transition-duration: 2s;
+  }
+
+}

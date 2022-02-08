@@ -1,0 +1,113 @@
+.footer {
+  background-image: url("../../img/bg-footer.jpg");
+  width: 100%;
+  height: 34vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__copyrights {
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-third;
+    margin-top: 38px;
+    letter-spacing: 0.03em;
+  }
+  &__logo {
+    &__img {
+      margin-top: 200px;
+    }
+  }
+  &__media {
+    margin-top: -105px;
+    &__item {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__link {
+      margin: 0 10px;
+
+    }
+    &__img {
+      &:hover {
+        transform: scale(1.2, 1.2);
+      }
+    }
+  }
+}
+.contact {
+  height: 450px;
+  width: 770px;
+  background-image: url("../../img/bg-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 60px 60px 69px 60px;
+  margin-top: -305px;
+  position: absolute;
+  z-index: 6;
+  right: 417px;
+  &__line {
+    border: 1px solid $color-primary;
+    width: 100px;
+    margin-top: 4px;
+  }
+  &__titul {
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__error {
+    margin-left: 63px;
+    color: red;
+  }
+  &__form {
+    justify-content: flex-end;
+  }
+  &__controls {
+    margin-top: 10px;
+  }
+  &__input {
+    border: 0;
+    border-bottom: 1px solid $color-primary;
+    background-color: rgba(0,0,0,0);
+    outline: 0;
+    width: 310px;
+    &[placeholder] {
+      color: #4B5562;
+      opacity: 0.5;
+      font-size: $font-primary;
+      letter-spacing: 4px;
+      padding-bottom: 16px;
+    }
+    &__name {
+      margin-top: 43px;
+    }
+    &__mail {
+      margin-top: 21px;
+    }
+  }
+  &__list {
+    color: $color-secondary;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: -12px;
+    &__link {
+      text-decoration: none;
+      color: $color-secondary;
+    }
+  }
+  &__btn {
+    margin-top: 37px;
+    margin-left: 169px;
+    font-size: $size-primary;
+    line-height: 27px;
+    padding: 11px 35px 10px 37px;
+  }
+}
+.fas {
+  color: #7E5AFF;
+}
